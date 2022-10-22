@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+  
+        body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+  
+        .swiper {
+          width: 100%;
+          height: 100%;
+        }
+  
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+  
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+  
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+  
+        .swiper {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <div class="tou">
+            <h1>个人博客</h1>
+            <div class="tou1">
+                <input type="text" placeholder="请输入内容"><button>搜索</button>
+            </div>
+        </div>
+        <div class="dh">
+            <li>
+                <a href="index.html" id="a1">首页</a>
+            </li>
+            <li>
+                <a href="dl.html">关于我</a>
+            </li>
+            <li>
+                <a href="zc.html">心情随笔</a>
+            </li>
+        </div>
+        <div class="lb">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./images/1.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/2.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/3.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/4.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/5.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+        <div class="nr">
+            <div class="nr1">
+                <span>最新文章</span> <p>技术分享</p>
+            </div>
+            <div class="nr2"></div>
+            <div class="nr3">
+                <ul>
+                    <li>
+                        <img src="./images/1666254468082.jpg" alt="">
+                        <div class="nr31">
+                            <h1> Rouge like</h1>
+                            <p>
+                                Rogue是一款1980年代诞生的游戏。在游戏中，玩家可以探索一个未知的地牢，努力突破自己的极限。当玩家死亡后，进度不会储存，需要重开新局。每一局的地图和内容物都是随机生成，确保不会有重复的体验。「回合制」、「永久死亡」和「随机生成地图」等等要素结合在一起，构成了Rogue这款迷人的游戏。这些要素后来被广泛的应用到各种游戏当中，因此人们就将有这些特色的游戏称之为「Rogue-like」。
+                            </p>
+
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <img src="./images/1666254468082.jpg" alt="">
+                        <div class="nr31">
+                            <h1> 消除类游戏</h1>
+                            <p>
+根据丹麦游戏设计师Jesper Juul1997年写下的定义，消除类游戏（tile-matching video game）——或者说得更通俗点，“三消游戏”，是一种需要玩家根据匹配标准操作方块，使其消失的益智类电子游戏，其核心挑战以及最大的乐趣乃是于杂乱无章的棋盘上识别图形、利用规律，并将方块由此消失并转化成分数的过程作为游戏对自己的奖励机制。这类玩法也经久不衰，如今的一众休闲小游戏中也或多或少能见其影子。
+                            </p>
+
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <img src="./images/1666254468082.jpg" alt="">
+                        <div class="nr31">
+                            <h1>横版跳跃类游戏 </h1>
+                            <p>
+      最经典的游戏要属《超级玛丽》了，在那个红白机的时代，几乎每一个都玩过它。其能用简单的关卡设计，给玩家带来相当好的游戏体验，也是独立游戏开发者者用得最多的游戏模式。                   
+                            </p>
+
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <img src="./images/1666254468082.jpg" alt="">
+                     
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="di">
+            ©版权归属个人·2022-10-20
+        </div>
+    </div>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+</body>
+</html>
